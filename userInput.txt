@@ -1,0 +1,141 @@
+For master Admin
+---------------------
+password: masteradmin
+
+INSERT INTO users (
+    first_name,
+    last_name,
+    email,
+    mobile_number,
+    emp_number,
+    password,
+    role,
+    department_id,
+    supervisor_id
+) VALUES (
+    'Master',
+    'Admin',
+    'master@admin.com',
+    '1234567890',
+    'EMP001',
+    '$2b$10$T5XMwTOo9.3GR4IGk7.f3uMBfXPCLizESqrxyXByxUPCr6qMX2fPa', 
+    'master_admin',
+    NULL, 
+    NULL  
+);
+
+=========================================================================
+
+Insert Level-1 Admin
+-------------------------------------------------------------------------
+
+password: level1admin
+
+INSERT INTO users (
+    first_name,
+    last_name,
+    email,
+    mobile_number,
+    emp_number,
+    password,
+    role,
+    department_id,
+    supervisor_id
+) VALUES (
+    'Level1',
+    'Admin',
+    'level1@admin.com',
+    '1234567891',
+    'EMP002',
+    '$2b$10$ntQ/9xGkMR0PnMj/Q5mGzOSiyPR3QxITpLyYsu./7WeL5fGv0D/fa', 
+    'level1_admin',
+    1, 
+    NULL  
+);
+
+
+
+Insert Level-2 Admin
+=======================================================================
+
+password: level2admin
+
+INSERT INTO users (
+    first_name,
+    last_name,
+    email,
+    mobile_number,
+    emp_number,
+    password,
+    role,
+    department_id,
+    supervisor_id
+) VALUES (
+    'Level2',
+    'Admin',
+    'level2@admin.com',
+    '1234567892',
+    'EMP003',
+    '$2b$10$tvxeGL8GM0u2yEa7LSVd0uelFwe7CVRszPiBBmpmq2OUXeAaaW3xa', 
+    'level2_admin',
+    1, 
+    2  
+);
+
+===============================================================================
+
+Insert Supervisor
+-------------------------------------------------------------------------------
+
+password: supervisor
+
+INSERT INTO users (
+    first_name,
+    last_name,
+    email,
+    mobile_number,
+    emp_number,
+    password,
+    role,
+    department_id,
+    supervisor_id
+) VALUES (
+    'Supervisor',
+    'User',
+    'supervisor@user.com',
+    '1234567893',
+    'EMP004',
+    '$2b$10$DdjkYBM2Qf9A8aLdAtpTwOk30x9aE2fTXyucfOrF7v3wgrhKmok2m', 
+    'supervisor',
+    1, 
+    3  
+);
+
+======================================================================================
+
+Insert Field Worker
+----------------------------------------------------------------------------------------
+
+password:fieldworker
+
+INSERT INTO users (
+    first_name,
+    last_name,
+    email,
+    mobile_number,
+    emp_number,
+    password,
+    role,
+    department_id,
+    supervisor_id
+) VALUES (
+    'Field',
+    'Worker',
+    'field@worker.com',
+    '1234567894',
+    'EMP005',
+    '$2b$10$Y4IMlzjF/qvfhVdFscLSw.flg8815X2Cw6/xHg7GuYeTeKxp8beem', 
+    'field_worker',
+    1, 
+    4  
+);
